@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('bg-summary.jpg');">
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="user.html">User Detail</a></li>
+      <li><a href="addExpense.html">Add Expense</a></li>
+      <li><a href="summary.html">Summary</a></li>
+      <li><a href="#" onclick="exitApp()">Exit</a></li>
+    </ul>
+    <div class="nav-info">
+      <span id="currentUser"></span>
+      <span id="currentTime"></span>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <h2>Expense Summary</h2>
+    <div id="userInfo"></div>
+
+
+    <table id="summaryTable">
+      <thead>
+        <tr>
+          <th>Amount (₹)</th>
+          <th>Category</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+
+    <h3 id="total"></h3>
+    <button onclick="goHome()">Close</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

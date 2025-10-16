@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('bg-user.jpg');">
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="user.html">User Detail</a></li>
+      <li><a href="addExpense.html">Add Expense</a></li>
+      <li><a href="summary.html">Summary</a></li>
+      <li><a href="#" onclick="exitApp()">Exit</a></li>
+    </ul>
+    <div class="nav-info">
+      <span id="currentUser"></span>
+      <span id="currentTime"></span>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <h2>User Information</h2>
+    <form id="userForm">
+      <label>User Name:</label>
+      <input type="text" id="username" pattern="[A-Za-z ]{3,50}" required>
+
+
+      <label>Contact Email:</label>
+      <input type="email" id="email"
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.([a-z]{2,3})(\.[a-z]{2,3})?" required>
+
+
+      <label>User Role:</label>
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option>Student</option>
+        <option>Worker</option>
+        <option>Staff</option>
+        <option>Employer</option>
+      </select>
+
+
+      <div class="button-group">
+        <button type="submit" id="saveBtn" disabled>Save</button>
+        <button type="button" id="editBtn" style="display:none;">Edit</button>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

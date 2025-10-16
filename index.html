@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Personal Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('bg-home.jpg');">
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="user.html">User Detail</a></li>
+      <li><a href="addExpense.html">Add Expense</a></li>
+      <li><a href="summary.html">Summary</a></li>
+      <li><a href="#" onclick="exitApp()">Exit</a></li>
+    </ul>
+    <div class="nav-info">
+      <span id="currentUser"></span>
+      <span id="currentTime"></span>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <h1>Welcome to the Personal Expense Tracker</h1>
+    <p>
+      This application helps you record your daily expenses and view summaries.
+      Your data is safely stored in your browser using localStorage — even after closing.
+    </p>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
